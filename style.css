@@ -12,6 +12,7 @@ ul {
 .header {
     min-height: 44px;
     background-color: rgba(245, 245, 247, .8);
+    padding: 10px;
 }
 
 .header-container {
@@ -46,21 +47,57 @@ ul {
 #SU{
     color:white;
     background-color: black;
-    border: 8px solid black;
+    border: 3px solid black;
     border-radius: 5px;
     text-decoration: none;
+    font-size: 15px;
+    line-height: 0px;
+}
+#UNIQUE{
+  color:black;
+  background-color: #E6C744;
+  border: 2px solid #E6C744;
+  border-radius: 2px;
+  text-decoration: none;
+  line-height: 0px;
 
 }
+
 
 .top-hero{
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    align-items: center;
+    line-height: 60px;
+    font-size: 47px;
 }
 
+#LIVE_FOR{
+  font-size: 15px;
+  line-height: 0px;
 
+} 
+ 
 body{
-    font-family: "Poppins", sans-serif;
+  font-family: "Poppins", sans-serif;
 }
+
+.hub{
+  background-color: #E6C744;
+  border: 2px solid #E6C744;
+  
+  border-radius: 2px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+
+  padding: 15px;
+}
+
+
+
+
+
 .poppins-thin {
     font-family: "Poppins", sans-serif;
     font-weight: 100;
