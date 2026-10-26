@@ -2,139 +2,167 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>FASHION — Explore Unique Clothes</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
+    <!-- ===== HEADER ===== -->
     <header class="header">
-        <div class="container header-container">
-            <div class="header-container-inner">
-                <nav class="nav">
-                    <ul class="nav-list">
-                        <li class="poppins-black">
-                            <a href="" class="logo"       >
-                                <img src="logo.svg" height="31" width="29">
-                                <b>FASHION</b>
-                            </a>
-                        </li>
-                        <li class="poppins-medium"><a href="">CATALOGUE</a></li>
-                        <li class="poppins-medium"><a href="">FASHION</a></li>
-                        <li class="poppins-medium"><a href="">FAVORITE</a></li>
-                        <li class="poppins-medium"><a href="">LIFESTYLE</a></li>
-                        <li class="poppins-medium"><a href="" id="SU">SIGN UP</a></li>
-                    </ul>
-                </nav>
-            </div>
+        <div class="container header-inner">
+            <a href="#" class="logo">
+                <img src="logo.svg" alt="Fashion logo" height="31" width="29">
+                <b>FASHION</b>
+            </a>
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li><a href="#">CATALOGUE</a></li>
+                    <li><a href="#">FASHION</a></li>
+                    <li><a href="#">FAVORITE</a></li>
+                    <li><a href="#">LIFESTYLE</a></li>
+                </ul>
+            </nav>
+            <a href="#" class="btn btn-dark btn-small">SIGN UP</a>
+            <button class="burger" aria-label="Menu" onclick="document.querySelector('.header').classList.toggle('open')">
+                <span></span><span></span><span></span>
+            </button>
         </div>
     </header>
-    
-    <section class="top-hero" >
-        <div class = "poppins-black">
-            <br>LET’S 
-            <br>EXPLORE
-            <br><span  id = "UNIQUE">UNIQUE</span>
-            <br>CLOTHES.
-            <br><span id = "LIVE_FOR" class="poppins-medium">Live for Influential and Innovative fashion!</span>
-        
-            <br> <a href="" id = "SU" class="poppins-medium"> SHOP NOW</a>
-    </div>
-<div>
-        <img src="f8062e00ad23ffe6bfbbb9c47ff59e5f7932e7e0.png" height="700px" width="1000px">
-    </div>
+
+    <!-- ===== HERO ===== -->
+    <section class="hero">
+        <div class="container hero-inner">
+            <div class="hero-text">
+                <h1>
+                    LET'S<br>
+                    EXPLORE<br>
+                    <span class="highlight">UNIQUE</span><br>
+                    CLOTHES.
+                </h1>
+                <p class="hero-sub">Live for Influential and Innovative fashion!</p>
+                <a href="#arrivals" class="btn btn-dark">SHOP NOW</a>
+            </div>
+            <div class="hero-img">
+                <img src="f8062e00ad23ffe6bfbbb9c47ff59e5f7932e7e0.png" alt="Fashion model">
+            </div>
+        </div>
     </section>
 
+    <!-- ===== BRAND HUB ===== -->
     <section class="hub">
-        <img src="4c0ee1df851e97e4b211f11887041fc17feb317e-fotor-bg-remover-2026093018334.png" height="100px" width="auto">
-        <img src="7fc5fb3a0f757f418de48ab8c3a5e1583f56a769-fotor-bg-remover-2026093018259.png" height="100px" width="auto">
-        <img src="7719abf7afb7449512b1ea7f0bd90831a9212f2d.png" height="100px" width="auto">
-        <img src="b86b86f1690142716d2184aa647b069962af25a4-fotor-bg-remover-2026093018324.png" height="100px" width="auto">
-        <img src="e60611b9ac42f4afaa9949d0868567342538febe.png" height="100px" width="auto">
-        <img src="pngwing.png" height="50px" width="auto">
+        <div class="container hub-inner">
+            <img src="4c0ee1df851e97e4b211f11887041fc17feb317e-fotor-bg-remover-2026093018334.png" alt="Brand">
+            <img src="7fc5fb3a0f757f418de48ab8c3a5e1583f56a769-fotor-bg-remover-2026093018259.png" alt="Brand">
+            <img src="7719abf7afb7449512b1ea7f0bd90831a9212f2d.png" alt="Brand">
+            <img src="b86b86f1690142716d2184aa647b069962af25a4-fotor-bg-remover-2026093018324.png" alt="Brand">
+            <img src="e60611b9ac42f4afaa9949d0868567342538febe.png" alt="Brand">
+            <img src="pngwing.png" alt="Brand" class="hub-wide">
+        </div>
     </section>
 
-    <section class="new_arrivals">
-        <span id = "NA" class = "poppins-black">NEW ARRIVALS</span>
+    <!-- ===== NEW ARRIVALS ===== -->
+    <section class="arrivals" id="arrivals">
+        <div class="container">
+            <p class="eyebrow">— New Arrival</p>
+            <h2 class="section-title">DISCOVER OUR PRODUCTS</h2>
+            <p class="section-sub">We are known around the nation for our excellent design work and quality products.</p>
 
-        <ul class="new_arrivals_img">
-            <li><img src="wm1.png" height="500px" width="auto">
-                <br><span id="na_c" class="poppins-medium">Hoodies & Sweetshirt</span>
-                <span  class="poppins-regular"  height="300px" width="auto">➔</span>
-                <br><span id="na_c_c" class="poppins-regular">Explore Now!</span>
+            <ul class="cards">
+                <li class="card">
+                    <div class="card-img">
+                        <img src="wm1.png" alt="Hoodies & Sweetshirt">
+                    </div>
+                    <div class="card-body">
+                        <h3>Hoodies &amp; Sweetshirt</h3>
+                        <a href="#" class="card-link">Explore Now! <span>&rarr;</span></a>
+                    </div>
+                </li>
+                <li class="card">
+                    <div class="card-img">
+                        <img src="wm2.png" alt="Coats & Parkas">
+                    </div>
+                    <div class="card-body">
+                        <h3>Coats &amp; Parkas</h3>
+                        <a href="#" class="card-link">Explore Now! <span>&rarr;</span></a>
+                    </div>
+                </li>
+                <li class="card">
+                    <div class="card-img">
+                        <img src="wm3.png" alt="Tees & T-Shirt">
+                    </div>
+                    <div class="card-body">
+                        <h3>Tees &amp; T-Shirt</h3>
+                        <a href="#" class="card-link">Explore Now! <span>&rarr;</span></a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </section>
 
-            </li>
-
-            <li><img src="wm2.png" height="500px" width="auto">
-                <br><span id="na_c" class="poppins-medium">Coats & Parkas</span>
-                <span  class="poppins-regular"  height="300px" width="auto">➔</span>
-                <br><span id="na_c_c" class="poppins-regular">Explore Now!</span>
-            </li>
-
-            <li><img src="wm3.png" height="500px" width="auto">
-                
-                <br><span id="na_c" class="poppins-medium"  height="300px" width="auto">Tees & T-Shirt</span>
-                <span  class="poppins-regular"  height="300px" width="auto">➔</span>
-                <br><span id="na_c_c" class="poppins-regular"  height="300px" width="auto">Explore Now!</span>
-               
-            </li>
-        </ul>
+    <!-- ===== FOOTER ===== -->
+    <footer>
+        <section class="cta">
+            <div class="container cta-inner">
+                <h2>JOIN SHOPPING COMMUNITY TO GET MONTHLY PROMO</h2>
+                <p>Type your email down below and be young wild generation</p>
+                <form class="cta-form" onsubmit="return false;">
+                    <input type="email" placeholder="Add your email here" aria-label="Email">
+                    <button type="submit" class="btn btn-dark">SEND</button>
+                </form>
+            </div>
         </section>
 
-        <footer > 
-            <section class="first_footer">
-            <span class="poppins-black">JOIN SHOPPING COMMUNITY TO</span>
-            <span class="poppins-black">GET MONTHLY PROMO</span>
+        <section class="footer-bottom">
+            <div class="container footer-grid">
+                <div class="footer-brand">
+                    <a href="#" class="logo logo-light">
+                        <img src="logo.svg" alt="" height="31" width="29">
+                        <b>FASHION</b>
+                    </a>
+                    <p>Complete your style with awesome clothes from us.</p>
+                    <ul class="socials">
+                        <li><a href="#" aria-label="Facebook"><img src="facebook.jpg" alt="Facebook"></a></li>
+                        <li><a href="#" aria-label="Instagram"><img src="instagram.jpg" alt="Instagram"></a></li>
+                        <li><a href="#" aria-label="LinkedIn"><img src="in.jpg" alt="LinkedIn"></a></li>
+                        <li><a href="#" aria-label="X"><img src="X.jpg" alt="X"></a></li>
+                    </ul>
+                </div>
 
-            <span class="poppins-regular">Type your email down below and be young wild generation</span>
+                <div class="footer-col">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Contact us</a></li>
+                        <li><a href="#">Support</a></li>
+                        <li><a href="#">Careers</a></li>
+                    </ul>
+                </div>
 
-            <br><span class="poppins-regular" id="add_email">Add your email here    <button class="poppins-regular" id="send">SEND</button> </span>
-            </section>
+                <div class="footer-col">
+                    <h4>Quick Link</h4>
+                    <ul>
+                        <li><a href="#">Share Location</a></li>
+                        <li><a href="#">Orders Tracking</a></li>
+                        <li><a href="#">Size Guide</a></li>
+                        <li><a href="#">FAQs</a></li>
+                    </ul>
+                </div>
 
-            <section class="second_footer">
-
-                <ul>
-                    <li><span>FASHION</span></li>
-                    <li>Complete your style with awesome clothes from us.</li>
-                    <li><img src="facebook.jpg" height="50px" width="auto"> <img src="instagram.jpg" height="50px" width="auto"> <img src="in.jpg" height="50px" width="auto"> <img src="X.jpg" height="50px" width="auto"></li>
-                </ul>
-
-                <ul>
-                    <li><span class="poppins-regular" >Legal</span> </li>
-                    <li><span class="poppins-regular" id="text_s_footer">Terms & conditions</span> </li>
-                    <li><span class="poppins-regular" id="text_s_footer">Privacy Policy us</span> </li>
-                    <li><span class="poppins-regular" id="text_s_footer"> </span> </li>
-
-                </ul>
-
-                <ul>
-                    <li><span class="poppins-regular" >Company</span> </li>
-                    <li><span class="poppins-regular" id="text_s_footer">About</span> </li>
-                    <li><span class="poppins-regular" id="text_s_footer">Contact us</span> </li>
-                    <li><span class="poppins-regular" id="text_s_footer">Support</span> </li>
-                    <li><span class="poppins-regular" id="text_s_footer">Careers</span> </li>
-
-                </ul>
-
-                <ul>
-                    <li><span class="poppins-regular" >Quick Link</span> </li>
-                    <li><span class="poppins-regular" id="text_s_footer">Share Location</span> </li>
-                    <li><span class="poppins-regular" id="text_s_footer">Orders Tracking</span> </li>
-                    <li><span class="poppins-regular" id="text_s_footer">Size Guide</span> </li>
-                    <li><span class="poppins-regular" id="text_s_footer">FAQs   </span> </li>
-                </ul>
-
-            </section>
-        </footer>
-
-       
-
-        
-
-    
+                <div class="footer-col">
+                    <h4>Legal</h4>
+                    <ul>
+                        <li><a href="#">Terms &amp; conditions</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+            <p class="copyright">&copy; 2026 Fashion Ltd. All rights reserved.</p>
+        </section>
+    </footer>
 
 </body>
 </html>
